@@ -1,0 +1,7 @@
+<renderpath>
+    <command type="clear" color="fog" depth="1.0" stencil="0" />
+    <command type="scenepass" pass="base" vertexlights="true" metadata="base" />
+    <command type="scenepass" pass="refract">
+        <texture unit="environment" name="viewport" />
+    </command>
+</renderpath>

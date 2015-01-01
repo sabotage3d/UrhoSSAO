@@ -1,0 +1,19 @@
+<renderpath>
+
+<rendertarget name="depth" sizedivisor="1 1" format="lineardepth" filter="true" />
+
+<command type="clear" color="1 1 1 1" depth="1.0" output="depth" />    
+<command type="scenepass" pass="depth" output="depth" />
+
+<command type="quad" tag="depth_copy" vs="process" ps="process" output="viewport">
+    <texture unit="diffuse" name="depth" />
+    <parameter name="ProjInfo" />
+    <parameter name="ProjScale" />
+    <parameter name="View" />
+    <parameter name="Radius" value="1.0" />
+    <parameter name="Bias" value="0.01" />
+    <parameter name="ProjScale2" value="1.0" />
+    <parameter name="IntensityDivR6" value="1.0" />
+</command>
+
+</renderpath>

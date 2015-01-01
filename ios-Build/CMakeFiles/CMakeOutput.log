@@ -1,0 +1,193 @@
+The system is: Darwin - 13.4.0 - i386
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+2014-12-26 17:57:23.021 xcodebuild[3997:1007] [MT] PluginLoading: Required plug-in compatibility UUID A2E4D43F-41F4-4FB9-BB94-7177011C9AED for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XVim.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2014-12-26 17:57:23.023 xcodebuild[3997:1007] [MT] PluginLoading: Required plug-in compatibility UUID A2E4D43F-41F4-4FB9-BB94-7177011C9AED for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Clang SVN 1.0.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET CompilerIdC OF PROJECT CompilerIdC WITH THE DEFAULT CONFIGURATION (Debug) ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap
+/bin/mkdir -p /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC.LinkFileList
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+chmod 0755 /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap
+
+CompileC CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o CMakeCCompilerId.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/i386 -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC -MMD -MT dependencies -MF /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.d --serialize-diagnostics /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.dia -c /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CMakeCCompilerId.c -o /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o
+
+Ld CompilerIdC normal i386
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC
+    export MACOSX_DEPLOYMENT_TARGET=10.9
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC -F/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC -filelist /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC.LinkFileList -mmacosx-version-min=10.9 -Xlinker -dependency_info -Xlinker /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC_dependency_info.dat -o /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC
+
+PhaseScriptExecution Run\ Script CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC
+    /bin/sh -c /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC"
+
+The C compiler identification is Clang, found in "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+2014-12-26 17:57:23.828 xcodebuild[4008:1007] [MT] PluginLoading: Required plug-in compatibility UUID A2E4D43F-41F4-4FB9-BB94-7177011C9AED for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XVim.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2014-12-26 17:57:23.830 xcodebuild[4008:1007] [MT] PluginLoading: Required plug-in compatibility UUID A2E4D43F-41F4-4FB9-BB94-7177011C9AED for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Clang SVN 1.0.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET CompilerIdCXX OF PROJECT CompilerIdCXX WITH THE DEFAULT CONFIGURATION (Debug) ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
+/bin/mkdir -p /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+chmod 0755 /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
+
+CompileC CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/i386 -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX -MMD -MT dependencies -MF /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.d --serialize-diagnostics /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.dia -c /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+
+Ld CompilerIdCXX normal i386
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX
+    export MACOSX_DEPLOYMENT_TARGET=10.9
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX -F/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX -filelist /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList -mmacosx-version-min=10.9 -Xlinker -dependency_info -Xlinker /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX_dependency_info.dat -o /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX
+
+PhaseScriptExecution Run\ Script CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX
+    /bin/sh -c /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX"
+
+The CXX compiler identification is Clang, found in "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+2014-12-26 17:57:32.531 xcodebuild[4087:1007] [MT] PluginLoading: Required plug-in compatibility UUID A2E4D43F-41F4-4FB9-BB94-7177011C9AED for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XVim.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2014-12-26 17:57:32.533 xcodebuild[4087:1007] [MT] PluginLoading: Required plug-in compatibility UUID A2E4D43F-41F4-4FB9-BB94-7177011C9AED for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Clang SVN 1.0.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET CompilerIdC OF PROJECT CompilerIdC WITH THE DEFAULT CONFIGURATION (Debug) ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap
+/bin/mkdir -p /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC.LinkFileList
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+chmod 0755 /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-generated-files.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-own-target-headers.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-all-target-headers.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC-project-headers.hmap
+
+CompileC CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o CMakeCCompilerId.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/i386 -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC -MMD -MT dependencies -MF /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.d --serialize-diagnostics /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.dia -c /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CMakeCCompilerId.c -o /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o
+
+Ld CompilerIdC normal i386
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC
+    export MACOSX_DEPLOYMENT_TARGET=10.9
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC -F/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC -filelist /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC.LinkFileList -mmacosx-version-min=10.9 -Xlinker -dependency_info -Xlinker /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC_dependency_info.dat -o /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC
+
+PhaseScriptExecution Run\ Script CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC
+    /bin/sh -c /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC"
+
+The C compiler identification is Clang, found in "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdC/CompilerIdC"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+2014-12-26 17:57:33.121 xcodebuild[4098:1007] [MT] PluginLoading: Required plug-in compatibility UUID A2E4D43F-41F4-4FB9-BB94-7177011C9AED for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/XVim.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+2014-12-26 17:57:33.123 xcodebuild[4098:1007] [MT] PluginLoading: Required plug-in compatibility UUID A2E4D43F-41F4-4FB9-BB94-7177011C9AED for plug-in at path '~/Library/Application Support/Developer/Shared/Xcode/Plug-ins/Clang SVN 1.0.xcplugin' not present in DVTPlugInCompatibilityUUIDs
+=== BUILD TARGET CompilerIdCXX OF PROJECT CompilerIdCXX WITH THE DEFAULT CONFIGURATION (Debug) ===
+
+Check dependencies
+
+Write auxiliary files
+/bin/mkdir -p /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-own-target-headers.hmap
+/bin/mkdir -p /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-generated-files.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+chmod 0755 /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-all-target-headers.hmap
+write-file /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX-project-headers.hmap
+
+CompileC CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o CMakeCXXCompilerId.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX
+    export LANG=en_US.US-ASCII
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.9 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/CompilerIdCXX.hmap -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources/i386 -I/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/DerivedSources -F/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX -MMD -MT dependencies -MF /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.d --serialize-diagnostics /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.dia -c /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CMakeCXXCompilerId.cpp -o /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CMakeCXXCompilerId.o
+
+Ld CompilerIdCXX normal i386
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX
+    export MACOSX_DEPLOYMENT_TARGET=10.9
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX -F/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX -filelist /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX.LinkFileList -mmacosx-version-min=10.9 -Xlinker -dependency_info -Xlinker /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Objects-normal/i386/CompilerIdCXX_dependency_info.dat -o /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX
+
+PhaseScriptExecution Run\ Script CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+    cd /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX
+    /bin/sh -c /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX.build/Debug/CompilerIdCXX.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+GCC_VERSION=com.apple.compilers.llvm.clang.1_0
+
+** BUILD SUCCEEDED **
+
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX"
+
+The CXX compiler identification is Clang, found in "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/CMakeFiles/2.8.12/CompilerIdCXX/CompilerIdCXX"
+

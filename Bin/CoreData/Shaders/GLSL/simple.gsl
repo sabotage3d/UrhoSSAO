@@ -1,0 +1,28 @@
+#include "Uniforms.glsl"
+#include "Samplers.glsl"
+#include "Transform.glsl"
+#include "ScreenPos.glsl"
+ 
+#ifdef BASE
+    varying vec4 vColor;
+#endif
+#ifdef EDGE
+    varying vec4 vScreenPos;
+#endif
+ 
+#ifdef COMPILEPS
+
+#endif
+ 
+void VS(){
+    mat4 modelMatrix = iModelMatrix;
+    vec3 worldPos = GetWorldPos(modelMatrix);
+    gl_Position = GetClipPos(worldPos);
+
+}
+ 
+void PS(){
+
+      gl_FragColor = color;
+
+}

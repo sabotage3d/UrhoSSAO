@@ -1,0 +1,10 @@
+<material>
+    <technique name="Techniques/SimpleSAO.xml" />
+    <parameter name="ProjInfo" />
+    <parameter name="ProjScale" />
+    <parameter name="View" />
+    <parameter name="Radius" value="1.0" />
+    <parameter name="Bias" value="0.01" />
+    <parameter name="ProjScale2" value="1.0" />
+    <parameter name="IntensityDivR6" value="1.0" />
+</material>

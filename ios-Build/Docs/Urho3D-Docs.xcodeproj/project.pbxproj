@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+       archiveVersion = 1;
+       classes = {
+       };
+       objectVersion = 46;
+       objects = {
+
+/* Begin PBXAggregateTarget section */
+              946D4DE46C374BC98DB5A6B7 /* ALL_BUILD */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 0238AF13AD234E2781F1678E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+                     buildPhases = (
+                            CEF4E40A1F2D4A19B53917AE /* CMake Rules */,
+                     );
+                     dependencies = (
+                            EE9AEA432EB04DB9AA2936B6 /* PBXTargetDependency */,
+                     );
+                     name = ALL_BUILD;
+                     productName = ALL_BUILD;
+              };
+              C94D44B49F764104B1D1FE3E /* ZERO_CHECK */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 934CAC1922AE4461A482F441 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+                     buildPhases = (
+                            8D7F316E8DE74E22A53BDDCC /* CMake Rules */,
+                     );
+                     dependencies = (
+                     );
+                     name = ZERO_CHECK;
+                     productName = ZERO_CHECK;
+              };
+              FA076D4E102E4013B7861F94 /* install */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 208314C630E244559E86C7C9 /* Build configuration list for PBXAggregateTarget "install" */;
+                     buildPhases = (
+                            B2FAD116D1DE458D9F75DD0F /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            B4C8ADCCB0574FD9BE945E41 /* PBXTargetDependency */,
+                     );
+                     name = install;
+                     productName = install;
+              };
+              E72BB5A5E9F74D20A6DDCAB3 /* package */ = {
+                     isa = PBXAggregateTarget;
+                     buildConfigurationList = 03176CA1E2E148A2ADFC6DAD /* Build configuration list for PBXAggregateTarget "package" */;
+                     buildPhases = (
+                            D571DEDFC4254CD7928BE7F3 /* CMake PostBuild Rules */,
+                     );
+                     dependencies = (
+                            B634D90B61684C539803B2DF /* PBXTargetDependency */,
+                     );
+                     name = package;
+                     productName = package;
+              };
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildStyle section */
+              FC8D57428FBF4B8EBF6E5884 /*  */ = {
+                     isa = PBXBuildStyle;
+              };
+              AF4F22723BA54688B543DADD /* Release */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Release;
+              };
+              6AC9FC0FC8C6471AB4B94902 /* RelWithDebInfo */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = RelWithDebInfo;
+              };
+              2E69AB59F8BA437C998486C3 /* Debug */ = {
+                     isa = PBXBuildStyle;
+                     buildSettings = {
+                            COPY_PHASE_STRIP = NO;
+                     };
+                     name = Debug;
+              };
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+              D919909FA73445EFABFCB1A1 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5AF8AC861B2246F08870BD39 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = C94D44B49F764104B1D1FE3E;
+                     remoteInfo = ZERO_CHECK;
+              };
+              895BA85C9D1B4E02B0C39668 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5AF8AC861B2246F08870BD39 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 946D4DE46C374BC98DB5A6B7;
+                     remoteInfo = ALL_BUILD;
+              };
+              4CB26576B175496BBA1693E7 /* PBXContainerItemProxy */ = {
+                     isa = PBXContainerItemProxy;
+                     containerPortal = 5AF8AC861B2246F08870BD39 /* Project object */;
+                     proxyType = 1;
+                     remoteGlobalIDString = 946D4DE46C374BC98DB5A6B7;
+                     remoteInfo = ALL_BUILD;
+              };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+E8D2C5CCCD8B442A80531777 /* /Users/sabotage3d/DEV/Urho3D-1.32/Docs/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = "sourcecode.text"; fileEncoding = 4; name = "CMakeLists.txt"; path = "CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+              DBC5E88A7C394DF2A158B4A9  = {
+                     isa = PBXGroup;
+                     children = (
+                            4A8386C2601C4FCA81E63270 /* Sources */,
+                            8357887071384560A6B55273 /* Resources */,
+                            938CEF61E2194BC7875876FC /* Products */,
+                     );
+                     sourceTree = "<group>";
+              };
+              4A8386C2601C4FCA81E63270 /* Sources */ = {
+                     isa = PBXGroup;
+                     children = (
+                            9CE0992128EC4397B2804C4B /* ALL_BUILD */,
+                            5E8185E4A78447D39C64355E /* ZERO_CHECK */,
+                     );
+                     name = Sources;
+                     sourceTree = "<group>";
+              };
+              8357887071384560A6B55273 /* Resources */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Resources;
+                     sourceTree = "<group>";
+              };
+              9CE0992128EC4397B2804C4B /* ALL_BUILD */ = {
+                     isa = PBXGroup;
+                     children = (
+                            068A452FA54847FF8903C147 /* CMake Rules */,
+                            E8D2C5CCCD8B442A80531777 /* /Users/sabotage3d/DEV/Urho3D-1.32/Docs/CMakeLists.txt */,
+                     );
+                     name = ALL_BUILD;
+                     sourceTree = "<group>";
+              };
+              068A452FA54847FF8903C147 /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              5E8185E4A78447D39C64355E /* ZERO_CHECK */ = {
+                     isa = PBXGroup;
+                     children = (
+                            FC99DFC020AB43E8BE27F41D /* CMake Rules */,
+                            E8D2C5CCCD8B442A80531777 /* /Users/sabotage3d/DEV/Urho3D-1.32/Docs/CMakeLists.txt */,
+                     );
+                     name = ZERO_CHECK;
+                     sourceTree = "<group>";
+              };
+              FC99DFC020AB43E8BE27F41D /* CMake Rules */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = "CMake Rules";
+                     sourceTree = "<group>";
+              };
+              938CEF61E2194BC7875876FC /* Products */ = {
+                     isa = PBXGroup;
+                     children = (
+                     );
+                     name = Products;
+                     sourceTree = "<group>";
+              };
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+              5AF8AC861B2246F08870BD39 /* Project object */ = {
+                     isa = PBXProject;
+                     attributes = {
+                            BuildIndependentTargetsInParallel = YES;
+                     };
+                     buildConfigurationList = D640809B3FFF4FA5A66592A1 /* Build configuration list for PBXProject  "Urho3D-Docs" */;
+                     buildSettings = {
+                     };
+                     buildStyles = (
+                            AF4F22723BA54688B543DADD /* Release */,
+                            6AC9FC0FC8C6471AB4B94902 /* RelWithDebInfo */,
+                            2E69AB59F8BA437C998486C3 /* Debug */,
+                     );
+                     compatibilityVersion = "Xcode 3.2";
+                     hasScannedForEncodings = 0;
+                     mainGroup = DBC5E88A7C394DF2A158B4A9;
+                     projectDirPath = "/Users/sabotage3d/DEV/Urho3D-1.32/Docs";
+                     projectRoot = "";
+                     targets = (
+                            946D4DE46C374BC98DB5A6B7 /* ALL_BUILD */,
+                            C94D44B49F764104B1D1FE3E /* ZERO_CHECK */,
+                            FA076D4E102E4013B7861F94 /* install */,
+                            E72BB5A5E9F74D20A6DDCAB3 /* package */,
+                     );
+              };
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+              331F7C025F174BD5A24D34F7 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              CEF4E40A1F2D4A19B53917AE /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs -f /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              F55DB67C687D49FCBE52C7DB /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              8D7F316E8DE74E22A53BDDCC /* CMake Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs -f /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              40A4B77207AA4A0BA4B7A7E5 /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              B2FAD116D1DE458D9F75DD0F /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs -f /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+              8C8B6ED43D4D487CBF72380C /*  */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     inputPaths = (
+                     );
+                     outputPaths = (
+                     );
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "# shell script goes here
+exit 0";
+                     showEnvVarsInLog = 0;
+              };
+              D571DEDFC4254CD7928BE7F3 /* CMake PostBuild Rules */ = {
+                     isa = PBXShellScriptBuildPhase;
+                     buildActionMask = 2147483647;
+                     files = (
+                     );
+                     name = "CMake PostBuild Rules";
+                     runOnlyForDeploymentPostprocessing = 0;
+                     shellPath = /bin/sh;
+                     shellScript = "make -C /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs -f /Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+                     showEnvVarsInLog = 0;
+              };
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+              EE9AEA432EB04DB9AA2936B6 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = C94D44B49F764104B1D1FE3E /* ZERO_CHECK */;
+                     targetProxy = D919909FA73445EFABFCB1A1 /* PBXContainerItemProxy */;
+              };
+              B4C8ADCCB0574FD9BE945E41 /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 946D4DE46C374BC98DB5A6B7 /* ALL_BUILD */;
+                     targetProxy = 895BA85C9D1B4E02B0C39668 /* PBXContainerItemProxy */;
+              };
+              B634D90B61684C539803B2DF /* PBXTargetDependency */ = {
+                     isa = PBXTargetDependency;
+                     target = 946D4DE46C374BC98DB5A6B7 /* ALL_BUILD */;
+                     targetProxy = 4CB26576B175496BBA1693E7 /* PBXContainerItemProxy */;
+              };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+              79A9E6A14BC14211A7881C50 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = iphoneos;
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs/build";
+                     };
+                     name = Release;
+              };
+              138FB14B3DEC4A758EB49112 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = iphoneos;
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs/build";
+                     };
+                     name = RelWithDebInfo;
+              };
+              6CEE20AD11E84FA5B28BF157 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            SDKROOT = iphoneos;
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs/build";
+                     };
+                     name = Debug;
+              };
+              C727C2A40A394935942C30F4 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              660CADF18E7340F0B400C65A /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              D9072C4B3C72405886418285 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ALL_BUILD;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              B3A15B8E60964AEAAE5AE054 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              9F430E969DD34B0B871ADC7E /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              C71AC34603CE481B9635B11F /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = ZERO_CHECK;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              8116C79A25BC4D998461D6DA /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              616B9A1BEEA342789FB7CE62 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              8255EBCAE62E414D8561B792 /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = install;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+              326039A70DE94B4B96F20042 /* Release */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Release;
+              };
+              00669F9FAFD44B72AD1694E0 /* RelWithDebInfo */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = RelWithDebInfo;
+              };
+              A3ADEF950CFD496FA465FAED /* Debug */ = {
+                     isa = XCBuildConfiguration;
+                     buildSettings = {
+                            ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+                            COMBINE_HIDPI_IMAGES = YES;
+                            GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+                            GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+                            GCC_OPTIMIZATION_LEVEL = 0;
+                            GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", URHO3D_SSE, URHO3D_FILEWATCHER, URHO3D_PROFILING, URHO3D_LOGGING, UNIX, URHO3D_OPENGL, URHO3D_ANGELSCRIPT, URHO3D_NAVIGATION, URHO3D_NETWORK, URHO3D_PHYSICS, URHO3D_URHO2D, URHO3D_STATIC_DEFINE, IOS, );
+                            GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+                            INSTALL_PATH = "";
+                            ONLY_ACTIVE_ARCH = NO;
+                            OTHER_CFLAGS = "  ";
+                            OTHER_LDFLAGS = " ";
+                            OTHER_REZFLAGS = "";
+                            PRODUCT_NAME = package;
+                            SECTORDER_FLAGS = "";
+                            SYMROOT = "/Users/sabotage3d/DEV/Urho3D-1.32/ios-Build/Docs";
+                            USE_HEADERMAP = NO;
+                            WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", );
+                     };
+                     name = Debug;
+              };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+              D640809B3FFF4FA5A66592A1 /* Build configuration list for PBXProject  "Urho3D-Docs" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            79A9E6A14BC14211A7881C50 /* Release */,
+                            138FB14B3DEC4A758EB49112 /* RelWithDebInfo */,
+                            6CEE20AD11E84FA5B28BF157 /* Debug */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Release;
+              };
+              0238AF13AD234E2781F1678E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            C727C2A40A394935942C30F4 /* Release */,
+                            660CADF18E7340F0B400C65A /* RelWithDebInfo */,
+                            D9072C4B3C72405886418285 /* Debug */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Release;
+              };
+              934CAC1922AE4461A482F441 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            B3A15B8E60964AEAAE5AE054 /* Release */,
+                            9F430E969DD34B0B871ADC7E /* RelWithDebInfo */,
+                            C71AC34603CE481B9635B11F /* Debug */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Release;
+              };
+              208314C630E244559E86C7C9 /* Build configuration list for PBXAggregateTarget "install" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            8116C79A25BC4D998461D6DA /* Release */,
+                            616B9A1BEEA342789FB7CE62 /* RelWithDebInfo */,
+                            8255EBCAE62E414D8561B792 /* Debug */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Release;
+              };
+              03176CA1E2E148A2ADFC6DAD /* Build configuration list for PBXAggregateTarget "package" */ = {
+                     isa = XCConfigurationList;
+                     buildConfigurations = (
+                            326039A70DE94B4B96F20042 /* Release */,
+                            00669F9FAFD44B72AD1694E0 /* RelWithDebInfo */,
+                            A3ADEF950CFD496FA465FAED /* Debug */,
+                     );
+                     defaultConfigurationIsVisible = 0;
+                     defaultConfigurationName = Release;
+              };
+/* End XCConfigurationList section */
+       };
+       rootObject = 5AF8AC861B2246F08870BD39;
+}
