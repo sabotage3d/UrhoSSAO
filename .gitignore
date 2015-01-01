@@ -139,6 +139,8 @@ Lib
 ../bin/UrhoShatter*
 ../bin/UrhoShatter
 
+Bin/34_DynamicGeometry
+
 #Xcode
 *.d
 *.dia
