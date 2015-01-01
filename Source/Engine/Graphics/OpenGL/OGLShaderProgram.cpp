@@ -28,6 +28,8 @@
 
 #include "DebugNew.h"
 
+#include <iostream>
+
 namespace Urho3D
 {
 
@@ -149,6 +151,7 @@ bool ShaderProgram::Link()
         
         glGetActiveUniform(object_, i, MAX_PARAMETER_NAME_LENGTH, 0, &count, &type, uniformName);
         int location = glGetUniformLocation(object_, uniformName);
+        std::cout << "UniformName:" << uniformName << std::endl;
         
         // Skip inbuilt or disabled uniforms
         if (location < 0)

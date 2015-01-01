@@ -65,7 +65,7 @@ time_(0.0f)
     // Enable ambient occlusion effect
     ao_enable = true;
     // Enable a simple Gaussian blur
-    ao_blur = false;
+    ao_blur = true;
     // Enable a depth aware Gaussian blur
     ao_blurdepth = true;
     // Show ambient occlusion raw values

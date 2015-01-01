@@ -6,7 +6,7 @@
 
 #ifdef GL_ES
 #extension GL_OES_standard_derivatives : enable
-precision highp float; 
+precision highp float;
 #endif
 
 varying vec4 vScreenPos;
@@ -32,11 +32,16 @@ void VS()
 
 #ifdef COMPILEPS
 
+#ifdef GL_ES
+uniform sampler2D sDepthBuffer;
+#endif
+
+
 //#define NUM_SAMPLES 9.0
 //#define NUM_SPIRAL_TURNS 7.0
 
-#define NUM_SAMPLES 1.0
-#define NUM_SPIRAL_TURNS 1.0
+#define NUM_SAMPLES 4.0
+#define NUM_SPIRAL_TURNS 4.0
 
 uniform vec3 cFrustumSize;
 uniform vec4 cGBufferOffsets;
@@ -73,6 +78,7 @@ void PS(){
     vec4 color = vec4(0.0,0.0,0.0,0.0);
 
     vec3 edC = texture2D(sDiffMap, vScreenPos.xy / vScreenPos.w).rgb;
+    //vec3 edC = texture2D(sDepthBuffer, vScreenPos.xy / vScreenPos.w).rgb;
     float depthC = DecodeDepth(edC);
 
 
@@ -102,6 +108,7 @@ void PS(){
 
         float depthP = DecodeDepth(texture2D(sDiffMap, ssP).rgb);
         vec3 vsP = GetViewPosition(ssP, depthP);
+        //vec3 vsP = GetViewPosition(ssP, depthC);
             
         vec3 v = vsP - vsC;
         
@@ -124,6 +131,7 @@ void PS(){
 
     //gl_FragColor = vec4(vsN,1.0) * occlusion;
     gl_FragColor = vec4(1,1,1,1.0) * occlusion;
+    //gl_FragColor = vec4(depthC,0,0,1);
 }
 
 #endif

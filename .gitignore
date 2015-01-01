@@ -125,6 +125,12 @@ bin/Debug
 bin/UrhoShatter*
 bin/UrhoShatter
 
+bin/Data
+ios-Build
+ios-Lib
+Docs
+Lib
+
 ../build
 ../build/*build
 ../build/build
