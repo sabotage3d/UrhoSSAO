@@ -14,7 +14,7 @@
         <output index="3" name="depth" />
     </command>
     
-    <command type="quad" tag="SAO_main" vs="SAO_main" ps="SAO_main" psdefines="NORMAL_MAP" output="occlusion">
+    <command type="quad" tag="process" vs="process" ps="process" output="occlusion">
         <texture unit="diffuse" name="viewport" />
         <texture unit="normal" name="normal" />
         <texture unit="depth" name="depth" />

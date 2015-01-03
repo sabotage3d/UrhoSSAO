@@ -36,9 +36,6 @@
 
 #include "DebugNew.h"
 
-//test
-#include <iostream>
-
 namespace Urho3D
 {
 
@@ -248,54 +245,7 @@ bool Texture2D::SetData(unsigned level, int x, int y, int width, int height, con
     if (!IsCompressed())
     {
         if (wholeLevel)
-        {
             glTexImage2D(target_, level, format, width, height, 0, GetExternalFormat(format_), GetDataType(format_), data);
-            int main_buffer;
-            unsigned int depth_texture,
-            depthmap_buffer,
-            depthmap_width  = 128,
-            depthmap_height = 256;
-            glGetIntegerv( GL_FRAMEBUFFER_BINDING, &main_buffer );
-            glGenFramebuffers( 1, &depthmap_buffer );
-            glBindFramebuffer( GL_FRAMEBUFFER, depthmap_buffer );
-            
-            glGenTextures( 1, &depth_texture );
-            glBindTexture( GL_TEXTURE_2D, depth_texture );
-            
-            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST );
-            glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST );
-            
-            glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE );
-            glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE );
-            
-            
-            glTexImage2D( GL_TEXTURE_2D,
-                         0,
-                         GL_DEPTH_COMPONENT,
-                         depthmap_width,
-                         depthmap_height,
-                         0,
-                         GL_DEPTH_COMPONENT,
-                         GL_UNSIGNED_SHORT,
-                         NULL );
-            
-            glBindTexture( GL_TEXTURE_2D, 0 );
-            
-            glFramebufferTexture2D( GL_FRAMEBUFFER,
-                                   GL_DEPTH_ATTACHMENT,
-                                   GL_TEXTURE_2D,
-                                   depth_texture,
-                                   0 );
-
-            
-            std::cout << "target: " << target_ << std::endl;
-            std::cout << "level: " << level << std::endl;
-            std::cout << "format: " << format << std::endl;
-            
-        }
-        
-        
-        
         else
             glTexSubImage2D(target_, level, x, y, width, height, GetExternalFormat(format_), GetDataType(format_), data);
     }

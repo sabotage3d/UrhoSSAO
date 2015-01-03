@@ -60,7 +60,8 @@ time_(0.0f)
     useMaterial = false;
     
     // Number of steps in each controller (high = precise+slow)
-    var_steps = 200.0f;
+    //var_steps = 200.0f;
+    var_steps = 10.0f;
     
     // Enable ambient occlusion effect
     ao_enable = true;
@@ -150,18 +151,18 @@ void DynamicGeometry::CreateScene()
     //floorObject->SetMaterial(cache->GetResource<Material>("Materials/simple.xml"));
     
     //sao = cache->GetResource<Material>("Materials/SimpleSAO.xml");
-    sao = cache->GetResource<Material>("Materials/simple.xml");
+    //sao = cache->GetResource<Material>("Materials/simple.xml");
     //Color myCola = Color(Random(1.0f),Random(1.0f),Random(1.0f),1.0f);
     Color myCola = Color(1  , 0,0 ,1.0f);
-    sao->SetShaderParameter("MyColor", Variant(myCola));
-    sao->SetShaderParameter("ObjectColor", Variant(myCola));
+    //sao->SetShaderParameter("MyColor", Variant(myCola));
+    //sao->SetShaderParameter("ObjectColor", Variant(myCola));
     
     
-    sao->SetShaderParameter("Radius", ao_radius.x_);
-    sao->SetShaderParameter("ProjScale2", ao_projscale.x_);
-    sao->SetShaderParameter("IntensityDivR6", ao_intensity.x_);
-    sao->SetShaderParameter("Var1", ao_var1.x_);
-    sao->SetShaderParameter("Var2", ao_var2.x_);
+    //sao->SetShaderParameter("Radius", ao_radius.x_);
+    //sao->SetShaderParameter("ProjScale2", ao_projscale.x_);
+    //sao->SetShaderParameter("IntensityDivR6", ao_intensity.x_);
+    //sao->SetShaderParameter("Var1", ao_var1.x_);
+    //sao->SetShaderParameter("Var2", ao_var2.x_);
     
     
 
@@ -354,7 +355,7 @@ void DynamicGeometry::SetupViewport()
     RenderPath = viewport->GetRenderPath()->Clone();
     //RenderPath->Load(cache->GetResource<XMLFile>("RenderPaths/DeferredSAO2.xml"));
     RenderPath->Load(cache->GetResource<XMLFile>("RenderPaths/ForwardDepthSAO3.xml"));
-    //RenderPath->Load(cache->GetResource<XMLFile>("RenderPaths/ForwardDepth2.xml"));
+    //RenderPath->Load(cache->GetResource<XMLFile>("RenderPaths/ForwardDepthSAO4.xml"));
     
     viewport->SetRenderPath(RenderPath);
     
@@ -565,12 +566,12 @@ void DynamicGeometry::HandleRenderUpdate(StringHash eventType, VariantMap& event
     
     
     RenderPath->SetShaderParameter("ProjInfo", Variant(projInfo));
-    sao->SetShaderParameter("ProjInfo", Variant(projInfo));
+    //sao->SetShaderParameter("ProjInfo", Variant(projInfo));
     
     // Projection scale: used to scale raidius (TODO: not correct and needs ProjScale2 to fix it)
     float viewSize = 2.0f *  camera->GetHalfViewSize();
     RenderPath->SetShaderParameter("ProjScale", Variant(graphics->GetHeight() / viewSize));
-    sao->SetShaderParameter("ProjScale", Variant(graphics->GetHeight() / viewSize));
+    //sao->SetShaderParameter("ProjScale", Variant(graphics->GetHeight() / viewSize));
     // TODO: viewport.get_rect is zero?
     //IntRect viewRect = viewport.get_rect();
     //renderPath.set_shaderParameters("ProjScale", Variant(viewRect.height / viewSize));
@@ -579,7 +580,7 @@ void DynamicGeometry::HandleRenderUpdate(StringHash eventType, VariantMap& event
     Urho3D::Matrix3 v = camera->GetView().ToMatrix3();
     
     RenderPath->SetShaderParameter("View", Variant(v));
-    sao->SetShaderParameter("View", Variant(v));
+    //sao->SetShaderParameter("View", Variant(v));
     
     //Urho3D::PrintLine("View: " + sao->GetShaderParameter("View").ToString());
     

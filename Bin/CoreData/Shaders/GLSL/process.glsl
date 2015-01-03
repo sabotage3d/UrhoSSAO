@@ -9,12 +9,21 @@
 precision highp float;
 #endif
 
-varying vec4 vScreenPos;
+//varying vec4 vScreenPos;
 
-//varying vec2 vScreenPos;
+varying vec2 vScreenPos;
+
+varying vec3 vFarRay;
 
 
 #ifdef COMPILEVS
+
+vec3 GetViewFarRay(vec4 clipPos)
+{
+    return vec3(cFrustumSize.x * clipPos.x,
+                cFrustumSize.y * clipPos.y,
+                cFrustumSize.z);
+}
 
 void VS()
 {
@@ -22,9 +31,10 @@ void VS()
     vec3 worldPos = GetWorldPos(modelMatrix);
     gl_Position = GetClipPos(worldPos);
 
-    vScreenPos = GetScreenPos(gl_Position);
+    //vScreenPos = GetScreenPos(gl_Position);
 
-    //vScreenPos = GetScreenPosPreDiv(gl_Position);
+    vScreenPos = GetScreenPosPreDiv(gl_Position);
+    vFarRay = GetViewFarRay(gl_Position);
 
 }
 #endif
@@ -77,12 +87,17 @@ void PS(){
 
     vec4 color = vec4(0.0,0.0,0.0,0.0);
 
-    vec3 edC = texture2D(sDiffMap, vScreenPos.xy / vScreenPos.w).rgb;
+    //vec3 edC = texture2D(sDiffMap, vScreenPos.xy / vScreenPos.w).rgb;
+    vec3 edC = texture2D(sDiffMap, vScreenPos).rgb;
     //vec3 edC = texture2D(sDepthBuffer, vScreenPos.xy / vScreenPos.w).rgb;
     float depthC = DecodeDepth(edC);
 
 
-    vec3 vsC = GetViewPosition(vScreenPos.xy / vScreenPos.w, depthC);
+    //vec3 vsC = GetViewPosition(vScreenPos.xy / vScreenPos.w, depthC);
+    vec3 vsC = GetViewPosition(vScreenPos, depthC);
+
+
+
 
     //normals
     vec3 vsN = normalize( cross(dFdy(vsC), dFdx(vsC)) );
@@ -91,6 +106,10 @@ void PS(){
      float intensity = cIntensityDivR6;
 
     float randomAngle = fract( pow(vScreenPos.x, vScreenPos.y) * 43758.5453 ) / cGBufferInvSize.x;
+
+    //vec3 normal = DecodeNormal(texture2D(sNormalMap, vScreenPos.xy / vScreenPos.w));
+    //vec3 normal = DecodeNormal(texture2D(sNormalMap, vScreenPos));
+    //vec3 vsN = cView * normal;
 
     float ssDiskRadius = cProjScale2 * cProjScale * cRadius / vsC.z; 
         
@@ -104,7 +123,8 @@ void PS(){
         float angle = randomAngle + alpha * (NUM_SPIRAL_TURNS * 6.28);
         
         vec2 ssOffset = floor( alpha * ssDiskRadius * vec2(cos(angle), sin(angle)) );
-        vec2 ssP = (vScreenPos.xy / vScreenPos.w) + ssOffset * cGBufferInvSize;
+        //vec2 ssP = (vScreenPos.xy / vScreenPos.w) + ssOffset * cGBufferInvSize;
+        vec2 ssP = vScreenPos + ssOffset * cGBufferInvSize;
 
         float depthP = DecodeDepth(texture2D(sDiffMap, ssP).rgb);
         vec3 vsP = GetViewPosition(ssP, depthP);
@@ -125,13 +145,14 @@ void PS(){
 
     //test end
 
-    vec4 diffuse = texture2D(sDiffMap,vScreenPos.xy / vScreenPos.w);
+    //vec4 diffuse = texture2D(sDiffMap,vScreenPos.xy / vScreenPos.w);
 
     //vec4 diffuse = texture2D(sDepthBuffer,vScreenPos.xy / vScreenPos.w);
 
     //gl_FragColor = vec4(vsN,1.0) * occlusion;
     gl_FragColor = vec4(1,1,1,1.0) * occlusion;
     //gl_FragColor = vec4(depthC,0,0,1);
+    //gl_FragColor = texture2D(sNormalMap, vScreenPos.xy / vScreenPos.w);
 }
 
 #endif

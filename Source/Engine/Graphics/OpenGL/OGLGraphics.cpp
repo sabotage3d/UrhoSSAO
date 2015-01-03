@@ -64,8 +64,6 @@
 
 #include "DebugNew.h"
 
-#include <iostream>
-
 #ifdef GL_ES_VERSION_2_0
 #define GL_DEPTH_COMPONENT24 GL_DEPTH_COMPONENT24_OES
 #define GL_FRAMEBUFFER_EXT GL_FRAMEBUFFER
@@ -2674,13 +2672,10 @@ void Graphics::CheckFeatureSupport(String& extensions)
         glesDepthStencilFormat = GL_DEPTH_COMPONENT24_OES;
     if (CheckExtension(extensions, "GL_OES_packed_depth_stencil"))
         glesDepthStencilFormat = GL_DEPTH24_STENCIL8_OES;
-    if  (CheckExtension(extensions, "GL_OES_depth_texture"))
-         std::cout << "GL_OES_depth_texture: working " << std::endl;
     if (!CheckExtension(extensions, "GL_OES_depth_texture"))
     {
         shadowMapFormat_ = 0;
         hiresShadowMapFormat_ = 0;
-       
     }
     else
     {

@@ -1,14 +1,18 @@
 <renderpath>
 
-<rendertarget name="depth" sizemultiplier="0.3 0.3" format="lineardepth" filter="true" />
-<rendertarget name="occlusion" sizemultiplier="0.3 0.3" format="rgba" filter="true" />
-<rendertarget name="occlusion2" sizemultiplier="0.3 0.3" format="rgba" filter="true" />
+<rendertarget name="normal" rtsizedivisor="1 1" format="rgba" />
+<rendertarget name="depth" sizemultiplier="1 1" format="lineardepth" filter="false" />
+<rendertarget name="occlusion" sizemultiplier="1 1" format="rgba" filter="false" />
+<rendertarget name="occlusion2" sizemultiplier="1 1" format="rgba" filter="false" />
+
 
 <command type="clear" color="1 1 1 1" depth="1.0" output="depth" />    
 <command type="scenepass" pass="depth" output="depth" />
+<command type="scenepass" pass="normal" output="normal" />
 
-<command type="quad" tag="depth_copy" vs="process" ps="process" output="occlusion">
+<command type="quad" tag="depth_copy" vs="process" ps="process" psdefines="NORMAL_MAP" output="occlusion">
     <texture unit="diffuse" name="depth" />
+    <texture unit="normal" name="normal" />
     <parameter name="ProjInfo" />
     <parameter name="ProjScale" />
     <parameter name="View" />
@@ -25,6 +29,8 @@
 <command type="quad" tag="BlurGaussian" enabled="true" vs="BlurGaussian" ps="BlurGaussian" psdefines="SAMPLES=8 VERTICAL" output="occlusion">
         <texture unit="diffuse" name="occlusion2" />
 </command>
+
+
 
  <command type="quad" tag="SAO_copy" enabled="true" vs="SAO_copy" ps="SAO_copy" >
         <texture unit="diffuse" name="viewport" />
